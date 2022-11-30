@@ -1,0 +1,593 @@
+#back{
+    width: 100%;
+    height: 280px;
+    background-image: url(https://hm.imimg.com/imhome_gifs/bg-img.jpg);
+
+}
+#back h3{
+  color: #f9f9f9;
+  font-size: 22px;
+  text-align: center;
+  padding-top:40px;
+}
+#back #product{
+  width: 40%;
+  height: 42.5px;
+  margin:auto;
+  margin-left: 0%;
+  padding-left: 20px;
+}
+#back button{
+  border:none;
+}
+  
+#btn{
+width: 150px;
+height:48px;
+background-color: teal;
+font-size: 20px;
+margin:auto;
+margin-right: 16%;
+color:#f9f9f9;
+
+}
+#backin{
+display: flex;
+margin-top: -10px;
+}
+#btnlo{
+width: 180px;
+height:48px;
+margin:auto;
+margin-left: 16%;
+border: none;
+font-size: 15px;
+
+}
+#btnlo #left_I{
+margin-right: 10px;
+color:grey;
+}
+#btnlo #right_I{
+margin-left: 10px;
+color:grey;
+}
+#city{
+width: 135px;
+height: 40px;
+margin-left: 20%;
+padding-left:2%;
+border: 4px double grey;
+background-color: #ffffff;
+display: none;
+}
+
+/* navbar2 */
+
+#navbar2{
+    display: flex;
+    justify-content: space-between;
+    border:none;
+    padding:0 20px;
+    width: 70%;
+    margin:auto;
+}
+.hov{
+    display: flex;
+    height: 55px;
+}
+#build_class,#pharma_class,#indus_S_class,#ele_class,#indus_M_class,#food_class{
+  display: flex;
+  height: 55px;
+}
+.hov img{
+  width:40px;
+  height: 40px;
+  margin: 10px 10px 0 0;
+  
+}
+
+#Building{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin:auto;
+   
+}
+#build_show{
+  display: none;
+}
+
+#electrical{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin:auto;
+   
+}
+#ele_show{
+  display: none;
+}
+#pharma{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin:auto;
+  
+}
+#pharma_show{
+  display: none;
+}
+#Industries_M{
+    display: flex;
+
+    justify-content: space-between;
+    width: 90%;
+    margin:auto;
+   
+}
+#ind_M_show{
+  display: none;
+}
+#Industries_S{
+    display: flex;
+
+    justify-content: space-between;
+    width: 90%;
+    margin:auto;
+   
+} 
+#ind_S_show{
+  display: none;
+}
+#food{
+    display: flex;
+
+    justify-content: space-between;
+    width: 90%;
+    margin:auto;
+}
+#food_show{
+  display: none;
+}
+#mig img{
+  width: 100%;
+}
+
+
+#slide_upper{
+ 
+    color: #333;
+    line-height: 40px;
+    padding-top: 4px;
+   
+    margin-left: 15%;
+}
+#slide_upper p{
+ font-size: 19px;
+ margin-top: -20px;
+}
+#slide_upper h2{
+  font-size: 29px;
+ }
+#slide_upper b {
+  font-size: 37px;
+  font-weight: 700;
+  
+}
+.slideimg{
+  display: block;
+  margin: auto;
+  height: 300px;
+  width: 70%;
+}
+#pura{
+  height: 105%;
+  width: 100%;
+  
+}
+#overlap{
+  position: relative;
+ 
+}
+#pura{
+  position:absolute;
+  top:0;
+  left: 10;
+  display: block;
+  margin:auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+
+/* building and construction box */
+
+.all{
+  margin:20px auto;
+  width: 80%;
+  box-shadow:0 -4px rgb(46,49,146);
+}
+.all h2{
+  padding-top:20px;
+  font-size: 28px;
+}
+#all{
+  margin:20px auto;
+  width: 80%;
+}
+#all h2{
+  padding-top:20px;
+  font-size: 28px;
+}
+#six{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 60%;
+  margin-left: 20px;
+}
+.sixgrid{
+  display: flex;
+  border:1px solid grey;
+  margin:10px
+}
+.sixgrid p,h3{
+  font-size: 14px;
+}
+.sixgrid img{
+  width: 100px;
+  height: 100px;
+  
+  display: block;
+  margin: auto 10px;
+ 
+}
+#build_box{
+ display: flex;
+ border: 2px solid grey;
+}
+#build_background{
+  background-image: url(https://hm.imimg.com/imhome_gifs/building-construction.jpg);
+  width: 325px;
+  background-size: cover;
+  
+}
+#build_background p{
+  font-size: 20px;
+  bottom: 40px;
+  color:white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+}
+/* electrical box */
+
+#six_ele{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 68%;
+  margin-left: 20px;
+}
+.sixgrid_ele{
+  display: flex;
+  border:1px solid grey;
+  margin:10px
+}
+.sixgrid_ele p,h3{
+  font-size: 14px;
+}
+.sixgrid_ele img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin:auto 10px;
+}
+#ele_box{
+ display: flex;
+ width: 100%;
+}
+#ele_background{
+  background-image: url(https://hm.imimg.com/imhome_gifs/electronics-electrical-goods.jpg);
+  width: 325px;
+  width: 325px;
+  background-size: cover;
+  color: white;
+}
+#ele_background p{
+  font-size: 20px;
+}
+
+
+/* pharma box */
+
+#six_pharma{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 68%;
+  margin-left: 20px;
+}
+.sixgrid_pharma{
+  display: flex;
+  border:1px solid grey;
+  margin:10px
+}
+.sixgrid_pharma p,h3{
+  font-size: 14px;
+}
+.sixgrid_pharma img{
+  width: 100px;
+  height: 100px;
+  
+  display: block;
+  margin: auto 10px;
+ 
+}
+#pharma_box{
+  display: flex;
+ width: 100%;
+}
+#pharma_background{
+  background-image: url(https://hm.imimg.com/imhome_gifs/bigBn06.jpg);
+
+  width: 325px;
+  width: 325px;
+  background-size: cover;
+  color: white;
+}
+#pharma_background p{
+ 
+  font-size: 20px;
+}
+
+/* hospital and medical equipment */
+
+ 
+#six_hospital{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 68%;
+  margin-left: 20px;
+}
+.sixgrid_hospital{
+  display: flex;
+  border:1px solid grey;
+ 
+  margin:10px
+}
+.sixgrid_hospital p,h3{
+  font-size: 14px;
+}
+.sixgrid_hospital img{
+  width: 100px;
+  height: 100px;
+  
+  display: block;
+  margin: auto 10px;
+ 
+}
+#hospital_box{
+  display: flex;
+ width: 100%;
+}
+#hospital_background{
+  background-image: url(https://hm.imimg.com/imhome_gifs/bigBn04.jpg);
+
+  width: 325px;
+  width: 325px;
+  background-size: cover;
+  color: white;
+}
+#hospital_background p{
+ 
+  font-size: 20px;
+}
+
+
+  /* industries machinary box */
+
+#six_ind_M{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 68%;
+  margin-left: 20px;
+}
+.sixgrid_ind_M{
+  display: flex;
+  border:1px solid grey;
+ 
+  margin:10px
+}
+.sixgrid_ind_M p,h3{
+  font-size: 14px;
+}
+.sixgrid_ind_M img{
+  width: 100px;
+  height: 100px;
+  
+  display: block;
+  margin: auto 10px;
+ 
+}
+#ind_M_box{
+  display: flex;
+ width: 100%;
+}
+#ind_M_background{
+  background-image: url(https://hm.imimg.com/imhome_gifs/industrial-plants-machinery.jpg);
+
+  width: 325px;
+  width: 325px;
+  background-size: cover;
+  color: white;
+}
+#ind_M_background p{
+ 
+  font-size: 20px;
+}
+
+
+
+   /* industrial supplies box */
+
+   #six_ind_S{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 68%;
+    margin-left: 20px;
+  }
+  .sixgrid_ind_S{
+    display: flex;
+    border:1px solid grey;
+   
+    margin:10px
+  }
+  .sixgrid_ind_S p,h3{
+    font-size: 14px;
+  }
+  .sixgrid_ind_S img{
+    width: 100px;
+    height: 100px;
+    
+    display: block;
+    margin: auto 10px;
+   
+  }
+  #ind_S_box{
+    display: flex;
+   width: 100%;
+  }
+  #ind_S_background{
+    background-image: url(https://hm.imimg.com/imhome_gifs/industrial-engineering.jpg);
+  
+    width: 325px;
+    width: 325px;
+    background-size: cover;
+    color: white;
+  }
+  #ind_S_background p{
+   
+    font-size: 20px;
+  }
+
+
+     /* food box */
+
+  #six_food{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 68%;
+    margin-left: 20px;
+  }
+  .sixgrid_food{
+    display: flex;
+    border:1px solid grey;
+   
+    margin:10px
+  }
+  .sixgrid_food p,h3{
+    font-size: 14px;
+  }
+  .sixgrid_food img{
+    width: 100px;
+    height: 100px;
+    
+    display: block;
+    margin: auto 10px;
+   
+  }
+  #food_box{
+    display: flex;
+   width: 100%;
+  }
+  #food_background{
+    background-image: url(https://hm.imimg.com/imhome_gifs/vegetable-fruits.png);
+  
+  
+    width: 325px;
+    background-size: cover;
+    color: white;
+  }
+  #food_background p{
+   
+    font-size: 20px;
+  }
+
+  /* garments box */
+
+
+  #six_cloth{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 68%;
+    margin-left: 20px;
+  }
+  .sixgrid_cloth{
+    display: flex;
+    border:1px solid grey;
+   
+    margin:10px
+  }
+  .sixgrid_cloth p,h3{
+    font-size: 14px;
+  }
+  .sixgrid_cloth img{
+    width: 100px;
+    height: 100px;
+   
+    display: block;
+    margin: auto 10px;
+   
+  }
+  #cloth_box{
+    display: flex;
+   width: 100%;
+  }
+  #cloth_background{
+    background-image: url(https://hm.imimg.com/imhome_gifs/apparel-clothing-garments.jpg);
+  
+  
+    width: 325px;
+    background-size: cover;
+    color: white;
+  }
+  #cloth_background p{
+   
+    font-size: 20px;
+  }
+
+
+  /* packing box */
+
+  
+  #six_pack{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 68%;
+    margin-left: 20px;
+  }
+  .sixgrid_pack{
+    display: flex;
+    border:1px solid grey;
+    margin:10px;
+  }
+  .sixgrid_pack h3,p{
+    font-size: 14px;
+  }
+  .sixgrid_pack img{
+  
+    height: 100px;
+    display: block;
+    margin: auto 10px;
+  }
+  #pack_box{
+    display: flex;
+   width: 100%;
+  }
+  #pack_background{
+    background-image: url(https://hm.imimg.com/imhome_gifs/bigBn05.jpg);
+    width: 325px;
+    background-size: cover;
+    color: white;
+  }
+  #pack_background p{
+    font-size: 20px;
+  }
