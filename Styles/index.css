@@ -1,0 +1,100 @@
+body{
+    width: 95%;
+    margin: auto;
+}
+.bannerRow{
+    display: inline-flex;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+
+}
+#sell{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 18px;
+}
+#seller{
+    width: 40%;
+}
+#seller > p{
+    color: blue;
+    font-size: 20px;
+}
+#regBox{
+    background-color: rgb(238,238,238);
+    border-radius: 20px;
+    height: 240px;
+    width: 25%;
+    text-align: center;
+}
+
+#input{
+    display:inline-flex;
+    justify-content: center;
+}
+#input input{
+    height: 45px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid gray;
+    width: 262px;
+    margin-top: 30px;
+    
+}
+#cCode{
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid gray;
+    margin-top: 30px;
+}
+#loginToOTPBtn{
+    background-color: teal;
+    color: white;
+    border-color:transparent;
+    height: 50px;
+    width: 85%;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#block1 > div{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    background-color: rgb(238,238,238);
+
+}
+#block1 img{
+    height: 44px;
+    transform: translate(20px,20px);
+}
+#block1 h3{
+    color: blue;
+    font-size: 20px;
+}
+#sellerPageBottom{
+    display: flex;
+    gap: 20px;
+}
+#block2> div{
+    display: flex;
+    background-color: rgb(238,238,238);
+    width: 100%;
+    text-align: center;
+    height:310px;
+}
+#block2 img{
+    transform: translateY(40px);
+}
+#block2 h3{
+    margin-top: 60px;
+    color: blue;
+}
+#block2 p{
+    width: 80%;
+    font-size: 17px;
+    margin: auto;
+}
