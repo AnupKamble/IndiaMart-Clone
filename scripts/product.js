@@ -61,7 +61,7 @@ let displayData = (data) => {
             btn.addEventListener('click',()=> {
                 window.location.href = "sendRequirement.html"
             })
-        div.append(Image,Name,Price,City,mob,btn);
+        div.append(Image,Name,Price,Seller,City,mob,btn);
         container.append(div);
     })
 }
