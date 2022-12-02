@@ -30,6 +30,7 @@ loginToOTPBtn.addEventListener('click', () => {
   alert("otp:"+otpVerify);
   let otpModalSection = document.getElementById('otpModalSection');
   otpModalSection.style.display="block";
+
 otpModalSection.innerHTML = structureBox('otpModal', 'otpModalLabel', `Enter the 4 digit One Time Password (OTP) sent to your Mobile Number`, 'otp', 'otpInput', 'X-X-X-X', 'otpModalButton', '','Verify OTP');
 let otpModalButton = document.getElementById('otpModalButton');
 otpModalButton.addEventListener('click', () => {
@@ -37,6 +38,7 @@ otpModalButton.addEventListener('click', () => {
   // console.log(otp);
   if (otp === otpVerify) {
    alert("OTP verified successfully");
+   window.location.href="seller_account.html";
 
   }
   else {

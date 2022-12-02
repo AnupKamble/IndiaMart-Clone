@@ -3,10 +3,6 @@ let structureBox = (modalId, modalLabelId, modalTitle, inputType, inputID, place
   modal = `<div id="${modalId}" tabindex="-1">
             <h2 class="modal-title" id="${modalLabelId}">${modalTitle}</h2>
             </div>
-            <div class="d-flex">
-            
-            </div>
-            
               <div id="input">
               ${inputType === 'phoneNumber' ? '<div class="col-2"><button id="cCode">+91</button></div>' : ''}
                 
