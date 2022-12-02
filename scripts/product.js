@@ -13,7 +13,8 @@ let fetch = async () => {
      
     let query = document.getElementById('i-searchbar').value;
 
-    let url = `http://localhost:3000/Users/?q=${query}`
+    // let url = `http://localhost:3000/Users/?q=${query}`
+    let url = `https://mock-server-jwji.onrender.com/Users/?q=${query}`
 
     let data = await fetchData(url);
     console.log((data));
@@ -26,7 +27,7 @@ let displayData = (data) => {
       container.innerHTML = "";
     data.map( (elem)=> {
         
-         
+        // container.innerHTML = "";
         let div = document.createElement('div');
             div.setAttribute("class","product-div")
         
@@ -39,6 +40,7 @@ let displayData = (data) => {
             Name.style.color = "blue"
             Name.style.cursor = "pointer"
             Name.addEventListener('click',()=> {
+                 saveStorage("ID", elem.id)
                 window.location.href ="product-details.html"
             })
             // Name.href = name;
@@ -58,7 +60,8 @@ let displayData = (data) => {
         let btn = document.createElement('button');
             btn.textContent = "Contact Supplier"
             btn.setAttribute( "id","prod-btn")
-            btn.addEventListener('click',()=> {
+            btn.addEventListener('click',async()=> {
+                saveStorage("ID", elem.id)
                 window.location.href = "sendRequirement.html"
             })
         div.append(Image,Name,Price,Seller,City,mob,btn);
@@ -79,6 +82,11 @@ let debounce = (func,delay) => {
     timer = setTimeout(() => {
         func();
     },delay)
+}
+
+
+let saveStorage = (key,value) => {
+ localStorage.setItem(key,JSON.stringify(value));
 }
 
 
