@@ -34,7 +34,7 @@
     
 }
 #icon{
-    line-height:3;
+    line-height:2;
   
 }
 #name{
@@ -102,6 +102,7 @@
    
     
 }
+
 
 #menubar ul li:hover .sub-menu2{
     display: block;
@@ -229,11 +230,24 @@
       .product-div{
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
         margin-right: 2.5%;
+        text-align: center;
 
       }
       .product-div h3{
         color: #2e3192;
-        font-weight: 600;
+        font-weight: 400;
+        width: 220px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .product-div button{
+        background-color: #02625a;
+        border-color: #02625a;
+        border-radius: 4%;
+        width: 10em;
+        margin-top: 3%;
+        margin-bottom: 6%;
       }
       .details{
         color: #068076;
@@ -242,9 +256,11 @@
         margin-top: 10%;
         
       }
+      #deals{
+        margin-top: 3%;
+      }
       #deals h2{       
         text-align: center;
-
       }
       #deals thead{
         background-color: #2d3192; 
@@ -262,6 +278,13 @@
       table,td {
   border: 1px solid #dedede;
 }
+#video{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4%;
+    
+}
 
       
     </style>
@@ -277,14 +300,14 @@
             <div id="name_info">
                
                 <div id="info">
-                    <i id="icon" class="fa-solid fa-location-dot"></i>
+                    <i style="color: grey;" id="icon" class="fa-solid fa-location-dot fa-lg"></i>
                     <p>Taluka Akole,Ahmednagar,Maharashtra |</p>
-                    <i id="icon" class="fa-solid fa-circle-check"></i>
-                    <p>GST <b>27AASCS7760E1ZT |</b></p>
-                    <i id="icon" class="fa-regular fa-circle-check"></i>
+                    <i style="color: darkgreen ;" id="icon" class="fa-solid fa-circle-check fa-lg"></i>
+                    <p>GST <b>27AASCS7760E1ZT</b>  |</p>
+                    <i style="color: rgb(14, 237, 14);" id="icon" class="fa-regular fa-circle-check fa-lg"></i>
                     <p>Verified Supplier |</p>
-                    <i id="icon" class="fa-solid fa-thumbs-up"></i>
-                    <p>5.0/5★★★★★</p>
+                    <i style="color: blue;" id="icon" class="fa-solid fa-thumbs-up fa-lg"></i>
+                    <p>5.0/5 </p><p style="color:gold;">★★★★★</p>
                 </div>
                 <div id="contact">
                     <button><i class="fa-solid fa-phone-volume"></i>
@@ -346,6 +369,12 @@
                 <div class="carousel-cell">
                     <img class="carousel-image" src="https://5.imimg.com/data5/SELLER/Default/2022/10/AJ/QW/TA/161102871/b-grade-lokwan-wheat-250x250.jpg" alt="image 5">
                 </div>
+                <div class="carousel-cell">
+                    <img class="carousel-image" src="https://5.imimg.com/data5/SELLER/Default/2022/9/AG/ZP/EP/156307736/2-250x250.jpg" alt="image 6">
+                </div>
+                <div class="carousel-cell">
+                    <img class="carousel-image" src="https://5.imimg.com/data5/QC/HW/ZO/SELLER-22880332/organic-lokwan-wheat-250x250.png" alt="image 7">
+                </div>
               
             </div>
 
@@ -361,13 +390,13 @@
                 <div id="icons_div1">
                     <div>
                     <span>
-                        <i class="fa-solid fa-hand-holding-dollar"></i>&nbsp;
+                        <i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>&nbsp;
                     <p>Nature of Business</p></span>
                 <p>Manufacturer</p>
             </div>
             <div>
                 <span>
-                    <i class="fa-solid fa-landmark-dome"></i>&nbsp;
+                    <i class="fa-solid fa-landmark-dome fa-2xl"></i>&nbsp;
                     <p>Year of Establishment</p>
                 </span>
                     <p>2008</p>
@@ -375,7 +404,7 @@
             </div>
             <div>
                 <span>
-                    <i class="fa-solid fa-scale-balanced"></i>&nbsp;
+                    <i class="fa-solid fa-scale-balanced fa-2xl"></i>&nbsp;
                     <p>Legal Status Of Firm</p>
                     
                 </span>
@@ -383,7 +412,7 @@
             </div>
             <div>
                 <span>
-                    <i class="fa-solid fa-chart-line"></i>&nbsp;
+                    <i class="fa-solid fa-chart-line fa-2xl"></i>&nbsp;
                     <p>Annual Turnover</p>
                     
                 </span>
@@ -393,7 +422,7 @@
                 <div id="icons_div2">
                     <div>
                     <span>
-                        <i class="fa-solid fa-file-invoice"></i>&nbsp;
+                        <i class="fa-solid fa-file-invoice fa-2xl"></i>&nbsp;
                         <p>GST Number</p>
                        
                     </span>
@@ -407,21 +436,16 @@
                    <div id="product_services">
                     <h2>Product & Services</h2>
                     <div id="product-container">
-                        <div class="product-div">
-                           <a href="#"> <img src="https://indiasbasket.in/wp-content/uploads/2022/07/101236-1.jpg" alt="raisins">
-                            <h3>Sahyadri raisins</h3>
-                        </a>
-                            <p>Raisins 1-Kg Pack</p>
-                            <a class="details" href="#">View Details ></a>
-                        </div>
-                        <div class="product-div">
-                            <a href="#"> <img src="https://magento.sahyadrifarms.store/media/catalog/product/f/r/frozen-cut-green-peas-_1__1.jpg">
-                             <h3>Frozen Green Peas</h3>
-                         </a>
-                             <p>Green Peas 2-Kg Pack</p>
-                             <a class="details" href="#">View Details ></a>
-                         </div>
+                        
                     </div>
+                   </div>
+
+                   <div id="video">
+                    <h2>Our Videos</h2>
+                    <iframe data-img="https://img.youtube.com/vi/vdGn6m7m18s/hqdefault.jpg" loading="lazy" frameborder="0" allowfullscreen="1" allow="picture-in-picture" 
+                    title="Wheat Flour" width="850" height="400"
+src="https://www.youtube.com/embed/vdGn6m7m18s?enablejsapi=1&origin=https%3A%2F%2Fwww.indiamart.com&widgetid=1&autoplay=1&mute=1">
+</iframe>
                    </div>
 
                    <div id="deals">
@@ -469,12 +493,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  
 
-<script>
+<script type="module">
+
 import mainNavbar from  "../components/mainNavbar.js"
-import getRewiews from  "../components/reviews.js"
-import {fetchData} from "../utils/utils.js"
+import getReviews from  "../components/reviews.js"
+import {fetchData} from "./utils/utils.js"
 document.getElementById('navbar').innerHTML = mainNavbar();
-document.getElementById('review').innerHTML = getRewiews();
+document.getElementById('review').innerHTML = getReviews();
    
 
 
@@ -486,17 +511,23 @@ document.getElementById('review').innerHTML = getRewiews();
     let response=await fetch(url)
     let data =await response.json()
     console.log(data);
-    //displayProducts(data);
+    displayProducts(data);
 }
 
 fetch_products();
 
+let count=0;
  
  let displayProducts = (data) => {
  
        let container = document.getElementById('product-container');
        container.innerHTML = "";
      data.map( (elem)=> {
+        count=count+1;
+         if(count<=5){
+            
+         
+         console.log(count);
          
           
          let div = document.createElement('div');
@@ -506,15 +537,14 @@ fetch_products();
              Image.src = elem.image;
              Image.setAttribute("id","prod-image")
  
-         let Name = document.createElement('p');
-             Name.textContent = elem.name;
-             Name.style.color = "blue"
+         let Name = document.createElement('h3');
+             Name.textContent = elem.name;            
              Name.style.cursor = "pointer"
              Name.addEventListener('click',()=> {
                  window.location.href ="product-details.html"
              })
-             // Name.href = name;
-         let Price = document.createElement('h2');
+             
+         let Price = document.createElement('p');
              Price.textContent = elem.price;
  
          let Seller = document.createElement('p');
@@ -524,17 +554,18 @@ fetch_products();
              City.textContent = elem.city;
              City.style.color = "rgb(141,119,119)"
  
-         let mob = document.createElement('h3');
-              mob.textContent = ` Call / ${elem.phone_num}`;
+        
  
          let btn = document.createElement('button');
-             btn.textContent = "Contact Supplier"
+             btn.textContent = "Send Requirement"
              btn.setAttribute( "id","prod-btn")
              btn.addEventListener('click',()=> {
                  window.location.href = "sendRequirement.html"
              })
-         div.append(Image,Name,Price,Seller,City,mob,btn);
+         div.append(Image,Name,Price,Seller,City,btn);
          container.append(div);
+         
+            }
      })
  }
 
