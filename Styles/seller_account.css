@@ -1,0 +1,99 @@
+body{
+    background-image: url('https://images.pexels.com/photos/955395/pexels-photo-955395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page{
+    margin-top: 60px;
+}
+#blackBox{
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    width: 24%;
+    border-radius: 0 0 5px 5px;
+    top:110px;
+    left: 100px;
+    color: white;
+    font-size: 13px;
+}
+#row{
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 24%;
+    height: 30px;
+    left: 100px;
+    top: 80px;
+    font-size: 16px;
+    border-radius: 5px 5px 0 0;
+}
+#accountBox{
+    position: relative;
+    background-color: rgb(238,238,238);
+    opacity: 0.8;
+    width: 60%;
+    margin: auto;
+    left: 180px;
+    top: 20px;
+    border-radius: 10px;
+}
+#td1 {
+    
+    width: 50%;
+    background-color: white;
+}
+#td2{
+background-color: blue;
+color: white;
+width: 50%;
+}
+#details, #products,#addressBox{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    text-align: center;
+}
+hr{
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: 2px solid black;
+}
+
+#addressBox > div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#accountBox input{
+ border: transparent;
+ height: 25px;
+ margin: 10px auto;
+ width: 50%;
+ border-radius: 5px;
+}
+#accountBox label{
+    font-weight: bold;
+}
+#submit1, #submit2, #submit3{
+    background-color: rgb(0,166,153);
+    color: white;
+    font-size: 20px;
+}
+
+#submit1:active, #submit2:active, #submit3:active{
+    background-color: rgb(6,128,118);
+    height: 40px;
+    color: black;
+}
+
+#submit4{
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+}
+
+
