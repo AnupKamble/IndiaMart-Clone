@@ -1,5 +1,5 @@
 
-import mainNavbar from "../Components/mainNavbar.js";
+import mainNavbar from "../components/mainNavbar.js.js";
 document.getElementById("navbar").innerHTML=mainNavbar();
 
 

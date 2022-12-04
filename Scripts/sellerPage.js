@@ -1,9 +1,9 @@
 
-import mainNavbar from "../Components/mainNavbar.js";
+import mainNavbar from "../components/mainNavbar.js";
 document.getElementById("navbar").innerHTML=mainNavbar();
 
 // Creating registration components
-import structureBox from "../Components/Registration.js";
+import structureBox from "../components/Registration.js";
 
 let generateOTP = (otpVerify) => {
   if (otpVerify.length > 0) {
