@@ -6,36 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/fcbe6e72b2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="../styles/index.css">
    
 </head>
 <body>
- <div id="navbar">
+ 
 
- </div>
+<!-- navbar new  -------------------------------------------------------------------------------------------------------------------------- -->
+                        <div id="new_navbar">
+                          
+                          <div>
+                            <a href=""><img id="i-logo" src="https://github.com/AnupKamble/IndiaMart-Clone/blob/master/logos/indiamart.png?raw=true" alt="logo" style="height:40px;"></a> 
+                         </div>
 
- <div id="search_value"></div>
+                               <div id=new_kuch_bhi>
+                                            <a href=""><h2 id="i-name">indiamart</h2></a>
+                                      </div>
+
+                                <div id="new_icons">
+
+                                        <div>
+                                          <img src="https://img.icons8.com/ios-glyphs/30/ffffff/small-business--v1.png"/> <br>
+                                          <span>Sell</span>
+                                        </div>
+
+                                        <div>
+                                          <img  src="https://img.icons8.com/material-outlined/24/ffffff/help.png" /> <br>
+                                          <span>Help</span>
+                                        </div>
+
+                                          <div>
+                                            <img  src="https://img.icons8.com/material-outlined/24/ffffff/create-new-child-post.png"/>
+                                          <br>  <span>Messages</span>
+                                          </div>
+
+                                          <div>
+                                            <img  src="https://img.icons8.com/windows/32/ffffff/user.png" id="login_image"/> <br>
+                                            <span id="span_signIn">Sign in</span>
+                                          </div>
+                                </div>
+                        </div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------ -->
+ <!-- <div id="search_value"></div> -->
 
 
-  <div id="static">
+ <div id="static">
  
 <!-- background image -->
     <div id="back">
           <h3><b>Search</b> for products & find <b>verified sellers</b> near you</h3>
 
           <div id="backin">
-            <button id="btnlo"><i class="fa-solid fa-location-dot" id="left_I"></i>All India<i class="fa-solid fa-chevron-down" id="right_I"></i></button>
+            <!-- <button id="btnlo"></button>
+            -->
+            <select name="All India" id="btnlo">
+              <option value="all" id="india">All India</option>
+              <option value="Pune" id="pune">Pune</option>
+              <option value="Mumbai" id="mumbai">Mumbai</option>
+            </select>
+           
+           
             <input type="text" placeholder="Enter product/Name" id="product">
             <button id="btn"><i class="fa-solid fa-magnifying-glass" ></i> search </button>
           </div>
+
           <input type="text" placeholder="Search Your City" id="city">
    </div>
 
  <!-- 2nd navbar -->
- <div id="nav2all">
- <div id="left2nd">
-
- </div>
   <div id="navbar2">
             
             <div id="build_class">
@@ -76,10 +115,7 @@
                 Agriculture</p>
             </div>
   </div>
-  <div id="left3rd">
-  
-  </div>
-</div>
+
  <hr>
   <!-- sliding image -->
 
@@ -234,7 +270,7 @@
 <div id="pharma_show">
   <div id="pharma">
 
-    <div class="Pharma_div">
+    <div class="pharma_div">
       <h3> Common Disease Medicines</h3>
       <p>Pharmaceutical Medicines</p>
       <p>Pharmaceutical Syrup</p>
@@ -492,9 +528,9 @@
       </div>
     </div>
     
-     
+     </div>
    <!-- building & construction box -->
-   <div id="all">
+   <div id="all_build">
     <h2>Building Construction Material & Equipment</h2>
     <div class="box">
     
@@ -677,7 +713,7 @@
 </div>
 </div>
 
-   
+
  <!-- pharma box -->
 
  <div class="all">
@@ -1370,100 +1406,7 @@
  <!-- footer -->
 
  <div id="footer">
-   <div id="upper">
-    <div> 
-      <p>we are happy to help 
-        you!</p>
-    </div>
-      
-    <div id="gomobile">
-          <div>
-            Go Mbbile : <i class="fa-brands fa-apple"></i> <i class="fa-brands fa-android"></i><i class="fa-solid fa-mobile-screen-button"></i>
-          </div>
-          <div>
-            follow us on : <span id="face"><i class="fa-brands fa-facebook"></i></span>
-            <span id="twit"><i class="fa-brands fa-square-twitter"></i></span> 
-            <span id="link"><i class="fa-brands fa-linkedin"></i></span>
-          </div>
-     </div>
-  </div>
   
-   <div id="middle">
-    <div>
-
-      <ul  style="list-style-type:none">
-       <li>
-        <a href="https://corporate.indiamart.com/about-us/">About Us</a> <br>
-        <a href="https://corporate.indiamart.com/partner-with-us/">Join Sales</a><br>
-        <a href="https://corporate.indiamart.com/category/success-stories/">Success Stories</a><br>
-        <a href="https://corporate.indiamart.com/category/indiamart-in-news/press-releases/">Press Section</a><br>
-        <a href="https://corporate.indiamart.com/advertise-with-indiamart/">Advertise with Us</a><br>
-        <a href="https://investor.indiamart.com/index.htm">Investor Section</a>
-       </li>
-
-    </ul >
-    </div>
-    <div>
-      <ul  style="list-style-type:none">
-        <li>
-          <a href="https://help.indiamart.com/">Help</a> <br>
-          <a href="https://help.indiamart.com/user-feedback/">Feedback</a> <br>
-          <a href="https://help.indiamart.com/complaint-registration/">Complaints</a> <br>
-          <a href="https://corporate.indiamart.com/customer-care-services/">Customer Care</a> <br>
-          <a href="https://corporate.indiamart.com/careers-at-im/">Jobs & Careers</a> <br>
-          <a href="https://corporate.indiamart.com/branch-offices/">Contact Us</a>
-        </li>
-      </ul>
-      
-    </div>
-   
-    <div id="supplies">
-      
-      <ul  style="list-style-type:none">
-        <p>Suppliers Tool Kit<p>
-        <li >
-          <a href="https://seller.indiamart.com/">Sell on IndiaMART</a> <br>
-          <a href="https://seller.indiamart.com/#succ_url=aHR0cHM6Ly9zZWxsZXIuaW5kaWFtYXJ0LmNvbS9ibHR4bi8/cHJlZj1yZWNlbnQ=">Latest BuyLeadFeedback</a> <br>
-          <a href="https://corporate.indiamart.com/quick-learn/">Learning Centre</a> <br>
-          <a href="https://shipwith.indiamart.com/book/part-load">Ship With IndiaMART</a> <br>
-        </li>
-      </ul>
-      
-    
-    </div>
-   
-    <div>
-     
-      <ul  style="list-style-type:none">
-        <p>Buyers Tool Kit</p>
-        <li>
-          <a href="https://my.indiamart.com/buyertools/postbl?modid=MY">Post Your Requirement</a> <br>
-          <a href="https://my.indiamart.com/buyertools/myproductbuy/?modid=MY">Products You Buy</a> <br>
-          <a href="https://www.indiamart.com/search.html">Search Products & Suppliers</a> <br>
-          <a href="https://my.indiamart.com/buyertools/payments/?bannerid=cntrlfooter"> Pay With IndiaMART</a> <br>
-        </li>
-      </ul>
-    </div>
-   
-    <div>
-      
-        <ul  style="list-style-type:none">
-          <p>Accounting Solutions</p>
-          <li>
-            <a href="https://busy.in/">Accounting Software</a> <br>
-            <a href="https://www.livekeeping.com/">Tally on Mobile</a> <br>
-            <a href="https://busy.in/e-invoice-software">GST e-Invoice</a> <br>
-           
-          </li>
-        </ul>
-        
-    </div>
-   </div>
-   <hr>
-   <div id="lower">
-          <span>Copyright © 1996-2022 IndiaMART InterMESH Ltd. All rights reserved.</span>
-          <span>Terms of Use - Privacy Policy - Link to Us</span>
-   </div>
  </div>
     
  <!-- sign in div -->
@@ -1543,6 +1486,6 @@
 
  </body>
  </html>
- <script src="./scripts/index.js" type="module">
+ <script src="../scripts/index.js" type="module">
 
  </script>

@@ -1,54 +1,7 @@
-import {show,structureBox} from '../Components/show.js'
-import navbar from '../Components/navbar.js'
+import {show,structureBox} from '../components/show.js'
+import {footer} from '../components/footer.js'
 
-
-document.getElementById("navbar").innerHTML=navbar();
-
-
-
-
-// anups code
-
-document.querySelector("#i-searchbtn").addEventListener("click",fetc)
-
-   async function fetc() {
-     let query=document.getElementById("i-searchbar").value;
-    let res = await fetch(`https://mock-server-jwji.onrender.com/Users/?q=${query}`);
-    let data=await res.json();
-
-    console.log((data));
-    display_data(data);
-
-}
-
-
-
-let display_data = (data)=>{
-
-    let container= document.getElementById("search_value");
-
-    data.map((ele)=>{
-      
-        let div=document.createElement("div");
-        
-
-        let h2=document.createElement("h2");
-        h2.innerText=ele.name ;
-        h2.addEventListener("click",()=>{
-           
-        })
-
-       console.log(h2)
-        div.append(h2);
-        container.append(div);
-     })
-}
-
-
-
-
-
-
+document.getElementById("footer").innerHTML=footer();
 
 // /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -67,12 +20,14 @@ let display_data = (data)=>{
     le.setAttribute("style","display:block");
     console.log(store);
     document.querySelector("#span_signIn").innerHTML="Hi!" +" "+store;
+    document.querySelector("body").setAttribute("style","background:none")
     
  }else{
     var hide=document.querySelector("#signIn_hide");
     hide.setAttribute("style","display:block");
 
-    document.querySelector("#logout").setAttribute("style","display:none")
+    document.querySelector("#logout").setAttribute("style","display:none");
+   
  }
   var logout=document.querySelector("#logout");
   logout.addEventListener("click",log);
@@ -82,16 +37,16 @@ let display_data = (data)=>{
    window.location.href="index.html"
   }
 
+document.querySelector("#login_image").addEventListener("mouseover",show_ele);
 
- document.querySelector("#login_image").addEventListener("mouseover",show_ele);
 document.querySelector("#signIn").addEventListener("mouseover",show_ele);
 function show_ele(){
     var ele=document.querySelector("#signIn");
     ele.setAttribute("style","display:block");
-  
 }
 
 document.querySelector("#signIn").addEventListener("mouseout",hide_e);
+document.querySelector("#backin").addEventListener("mouseout",hide_e);
 function hide_e(){
     var ele=document.querySelector("#signIn");
     ele.setAttribute("style","display:none");
@@ -140,13 +95,13 @@ let generateOTP = (otpVerify) => {
     if (otp === otpVerify) {
      alert("OTP verified successfully");
 
-
      localStorage.setItem("mobile",JSON.stringify(contact));
      window.location.href="index.html";
     
     }
     else {
       alert('Invalid OTP');
+      document.querySelector("body").setAttribute("style","background:none")
     }
     otpModalSection.style.display="none";
   });
@@ -154,10 +109,6 @@ let generateOTP = (otpVerify) => {
 
 
 
-
-  //shivam
-
-  //sign in 
 
  
 
