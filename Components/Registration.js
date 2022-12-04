@@ -6,7 +6,7 @@ let structureBox = (modalId, modalLabelId, modalTitle, inputType, inputID, place
               <div id="input">
               ${inputType === 'phoneNumber' ? '<div class="col-2"><button id="cCode">+91</button></div>' : ''}
                 
-                  <input type="number" id="${inputID}" placeholder="${placeholder}">
+                  <input type="mobile" id="${inputID}" required  maxlength="10" placeholder="${placeholder}">
               
             </div>
             <div class="d-flex my-3">
@@ -17,3 +17,6 @@ let structureBox = (modalId, modalLabelId, modalTitle, inputType, inputID, place
 }
 
 export default structureBox;
+
+
+
