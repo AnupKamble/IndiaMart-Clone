@@ -9,7 +9,7 @@ let selectedID = JSON.parse(localStorage.getItem("ID")) || [];
 
 let fetch = async () => {
     
-    let url = `https://mock-server-jwji.onrender.com/Users/${selectedID}`
+    let url = `https://api-project-masai.onrender.com/${selectedID}`
     let data = await fetchData(url);
     // console.log(data);
     displayImage(data);
@@ -110,7 +110,7 @@ let displaySeller = (data) => {
 
     let Call = document.createElement('p');
         Call.textContent = `Call / ${data.phone_num}`
-        Call.style.color = "black"
+        // Call.style.color = "black"
         Call.style.fontSize = "18px";
         Call.style.fontWeight = "700";
 
@@ -182,7 +182,11 @@ let displayModal = (data) => {
 }
 
 
+let next_btn =document.querySelector("#next-btn");
 
+next_btn.addEventListener('click',()=> {
+    window.location.href = "thankyou.html";
+})
 
 
 document.getElementById('i-searchbtn').addEventListener('click',() => {
@@ -195,7 +199,7 @@ let fetchApi= async () => {
     let query = document.getElementById('i-searchbar').value;
 
     // let url = `http://localhost:3000/Users/?q=${query}`
-    let url = `https://mock-server-jwji.onrender.com/Users/?q=${query}`
+    let url = `https://api-project-masai.onrender.com/?q=${query}`
 
     let data = await fetchData(url);
     console.log((data));

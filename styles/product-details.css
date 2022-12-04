@@ -9,6 +9,7 @@
     height: 400px;
     width: 400px;
 }
+
 #get-btn {
     margin-top: 60px;
     height: 60px;
@@ -21,6 +22,12 @@
     font-weight: 700;
     cursor: pointer;
 }
+
+#get-btn :hover{
+    height: 65px;
+    width: 295px;
+    background-color: rgb(6, 54, 50);
+}
 #sele-price {
     padding-left: 55px;
     
@@ -30,8 +37,19 @@
     color: grey;
     margin-top: 22px;
 }
+#sel-div p:hover {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
 #sel-div > h3 {
     font-size: larger;
+}
+
+#sel-div h3:hover {
+    cursor:pointer;
+    text-decoration: underline;
+    color: blue;
 }
 
 #suppy-btn {
@@ -45,6 +63,9 @@
     text-decoration:underline;
     cursor: pointer;
 }
+/* #supply-btn:hover {
+    s
+} */
 #sele-seller {
     /* padding-left: 10px; */
     padding: 25px 10px 10px 10px;
@@ -53,6 +74,11 @@
 #sel-div > h5 {
     font-size: large;
     /* padding: 25px 10px 10px 10px; */
+}
+#sel-div h5:hover {
+    cursor:pointer;
+    text-decoration: underline;
+    color: blue;
 }
 
 #modal-div {
@@ -109,3 +135,7 @@ font-size: 18px;
     font-size: large;
     font-weight: 500;
 }
+
+/* #next-btn {
+
+} */

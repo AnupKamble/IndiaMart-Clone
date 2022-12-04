@@ -6,19 +6,29 @@
     text-align: center;
     gap: 13px;
     width: 80%;
-    
-   
 }
+
 
  .product-div {
     height: 570px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
 } 
-
+.product-div :hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
 #prod-image {
     height: 300px;
     width: 200px;
 }
+
+#prod-image:hover {
+    /* height: 350px; */
+    width: 300px;
+}
+
 
 #prod-btn {
     width: 200px;
@@ -30,6 +40,13 @@
     font-size:medium;
     font-weight: bold;
     cursor: pointer;
+}
+
+#prod-btn:hover {
+    height: 40px;
+    width: 220px;
+    background-color: rgb(3, 63, 58);
+    text-decoration: none;
 }
 
 #product-page {

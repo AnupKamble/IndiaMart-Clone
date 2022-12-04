@@ -2,7 +2,7 @@ import mainNavbar from  "../components/mainNavbar.js"
 import getRewiews from  "../components/reviews.js"
 import {fetchData} from "../utils/utils.js"
 document.getElementById('navbar').innerHTML = mainNavbar();
-document.getElementById('review').innerHTML = getRewiews();
+// document.getElementById('review').innerHTML = getRewiews();
 
 document.getElementById('i-searchbtn').addEventListener('click',() => {
     fetch();
@@ -14,7 +14,7 @@ let fetch = async () => {
     let query = document.getElementById('i-searchbar').value;
 
     // let url = `http://localhost:3000/Users/?q=${query}`
-    let url = `https://mock-server-jwji.onrender.com/Users/?q=${query}`
+    let url = `https://api-project-masai.onrender.com/Users/?q=${query}`
 
     let data = await fetchData(url);
     console.log((data));
@@ -62,7 +62,7 @@ let displayData = (data) => {
             btn.setAttribute( "id","prod-btn")
             btn.addEventListener('click',async()=> {
                 saveStorage("ID", elem.id)
-                window.location.href = "sendRequirement.html"
+                window.location.href = "product-details.html"
             })
         div.append(Image,Name,Price,Seller,City,mob,btn);
         container.append(div);
@@ -90,6 +90,209 @@ let saveStorage = (key,value) => {
 }
 
 
+
+
+
+document.getElementById('nearme-btn').addEventListener('click',()=> {
+
+    fetchCity();
+})
+
+
+let fetchCity = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users/?city=Pune`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+
+document.getElementById('pune').addEventListener('click',()=> {
+
+    fetchCityPune();
+})
+
+
+let fetchCityPune = async ()=> {
+     
+    let search = document.getElementById('i-searchbar').value;
+    let url = `https://api-project-masai.onrender.com/Users/?city=Pune`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('indore').addEventListener('click',()=> {
+
+    fetchCityindore();
+})
+
+
+let fetchCityindore = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users/?q=indore`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+
+document.getElementById('delhi').addEventListener('click',()=> {
+
+    fetchCitydelhi();
+})
+
+
+let fetchCitydelhi = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users/?q=delhi`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+
+document.getElementById('agra').addEventListener('click',()=> {
+
+    fetchCityagra();
+})
+
+
+let fetchCityagra = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users/?q=agra`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+
+document.getElementById('rajkot').addEventListener('click',()=> {
+
+    fetchCityRajkot();
+})
+
+
+let fetchCityRajkot = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users/?q=rajkot`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+
+document.getElementById('bathinda').addEventListener('click',()=> {
+
+    fetchCityBathinda();
+})
+
+
+let fetchCityBathinda = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users/?q=bathinda`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('madurai').addEventListener('click',()=> {
+
+    fetchCityMadurai();
+})
+
+
+let fetchCityMadurai = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users/?q=madurai`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('banglore').addEventListener('click',()=> {
+
+    fetchCityBanglore();
+})
+
+
+let fetchCityBanglore = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users/?q=banglore`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+
+
+document.getElementById('chennai').addEventListener('click',()=> {
+
+    fetchCityChennai();
+})
+
+
+let fetchCityChennai = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users/?q=chennai`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+
+document.getElementById('hyderabad').addEventListener('click',()=> {
+
+    fetchCityHyderabad();
+})
+
+
+let fetchCityHyderabad = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users/?q=hyderabad`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+
+document.getElementById('body').onload('click',()=> {
+
+    fetchDataRandom();
+})
+
+
+let fetchDataRandom = async ()=> {
+
+    let url = `https://api-project-masai.onrender.com/Users`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
 
 
 
