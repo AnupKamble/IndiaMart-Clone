@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiaMart</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/review.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">   
+  
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+       #colorstrip{
+    width: 100%;
+     height: 2px;
+    border-style: solid;
+    border-color: #2d3192;
+    background-color: #2d3192;
+}
+#name_info{
+    display: flex;
+   
+    justify-content: space-between;
+}
+#info{
+    display: flex;
+    
+}
+#icon{
+    line-height:2;
+  
+}
+#name{
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+#contact button{
+    border-color: #02625a;
+    color: #02625a;
+    border-radius: 5%;
+    width: 14em; 
+    height: 45px;
+}
+#contact{
+    margin-top: 1%;
+    margin-bottom:8px ;
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+}
+#menubar{
+    width: 75em;
+    height: 45px;
+    line-height: 48px;
+    background-color: #eaeaf4;
+    
+}
+#menubar li{
+    display: inline-block;
+
+}
+#menubar ul li a{
+    padding: 0px 30px;    
+    text-decoration: none;
+    color: black;
+}
+.active{
+    background-color: #2D3192;
+   
+}
+.active a{
+    color: white;
+}
+.sub-menu1{
+    display: none;
+}
+.sub-menu2{
+    display: none;
+}
+
+#menubar ul li:hover .sub-menu1{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    width: 20%;    
+    margin-left: -4px;
+    background-color:whitesmoke;
+}
+#menubar ul li:hover .sub-menu1 ul{
+    display:flex;
+    flex-direction: column;
+    line-height:2;
+   margin-top: 10px;
+   
+    
+}
+
+
+#menubar ul li:hover .sub-menu2{
+    display: block;
+    position: absolute;
+    z-index: 3;
+    width: 20%;    
+    margin-left: -4px;
+    background-color:whitesmoke;
+
+}
+#menubar ul li:hover{
+    background-color:whitesmoke
+}
+#menubar ul li:hover .sub-menu2 ul{
+    display:flex;
+    flex-direction: column;
+    line-height:2;
+   margin-top: 10px;    
+   
+}
+
+
+#mailbtn{   
+    border-color: #02625a;
+    background-color: #02625a;
+    color: white;
+    border-radius: 5%;
+    margin-left: 1%;
+    width: 14em; 
+    height: 45px;      
+}
+
+
+.carousel{
+    width: 95%;
+    justify-content: center;
+    margin-left: 2%;
+}
+
+.carousel-cell{
+    width: 30%; /* half-width */
+  height: 240px;
+  margin-right: 10px;
+        }
+        .carousel-image{
+            width: 100%;
+            height: 240px;
+        }
+        
+
+        .carousel-cell:before{
+            display: block;
+        }
+        #carousel_container{
+            justify-content: center;
+            margin-top: 1.7%;
+        }
+        #icons_div1{
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;           
+        }
+        #icons_div1 span{
+           display: flex;
+          
+        }       
+
+        #icons_div2 span{
+           display: flex;
+        }
+
+        #icons_div2{
+            display: flex;
+            justify-content: center;
+            justify-content: space-evenly;
+            margin-top: 3%;           
+        }
+        #main-container{
+            justify-content: center;
+            margin-left: 7%;
+            margin-right: 7%;
+
+        }
+        #about{
+            margin-top: 5%;      
+            text-align: center;      
+        }
+        #about h2{
+            font-size:x-large;
+            font-weight: 750;
+        }
+        #about h2,p{
+            text-align: center;            
+        }
+        #about a{           
+            text-decoration: none;
+            color: #2e3192;
+        }
+      #icons_div{
+        margin-top: 4%;
+        letter-spacing: 1px;
+        font-size:14px;        
+      }
+      #icons_div i{
+        color:#2e3192;
+      }
+      #product_services h2{
+        font-size:x-large;
+            font-weight: 750;
+      }
+      #product_services{
+        margin-top: 35px;
+        text-align: center;
+        justify-content: center;      
+      }
+      #product-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 2.5%;        
+      }
+      #product-container img{
+        width: 250px;
+        height: 250px;
+      }
+      .product-div{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-right: 2.5%;
+        text-align: center;
+
+      }
+      .product-div h3{
+        color: #2e3192;
+        font-weight: 400;
+        width: 220px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .product-div button{
+        background-color: #02625a;
+        border-color: #02625a;
+        border-radius: 4%;
+        width: 10em;
+        margin-top: 3%;
+        margin-bottom: 6%;
+      }
+      .details{
+        color: #068076;
+        font-size: medium;
+        font-weight: bold;
+        margin-top: 10%;
+        
+      }
+      #deals{
+        margin-top: 3%;
+      }
+      #deals h2{       
+        text-align: center;
+      }
+      #deals thead{
+        background-color: #2d3192; 
+        border: 1px solid #2d3192; 
+        color: white;        
+      }
+      #deals table{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        table-layout: auto;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;        
+        border-collapse: collapse;        
+      }
+      table,td {
+  border: 1px solid #dedede;
+}
+#video{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4%;
+    
+}
+
+      
+    </style>
+    
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="main-container">
+        
+        <div id="colorstrip"></div>
+        <div id="name">      
+            <h1>Sahyadri Agro Industries And Foods Private Limited</h1>    
+            <div id="name_info">
+               
+                <div id="info">
+                    <i style="color: grey;" id="icon" class="fa-solid fa-location-dot fa-lg"></i>
+                    <p>Taluka Akole,Ahmednagar,Maharashtra |</p>
+                    <i style="color: darkgreen ;" id="icon" class="fa-solid fa-circle-check fa-lg"></i>
+                    <p>GST <b>27AASCS7760E1ZT</b>  |</p>
+                    <i style="color: rgb(14, 237, 14);" id="icon" class="fa-regular fa-circle-check fa-lg"></i>
+                    <p>Verified Supplier |</p>
+                    <i style="color: blue;" id="icon" class="fa-solid fa-thumbs-up fa-lg"></i>
+                    <p>5.0/5 </p><p style="color:gold;">★★★★★</p>
+                </div>
+                <div id="contact">
+                    <button><i class="fa-solid fa-phone-volume"></i>
+                    View Mobile Number</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="menu">
+            <div id="menubar">
+                <ul>
+                    <li class="active"><a href=""> Home</a></li>
+                    <li><a href="">Products & Services</a>
+                        <div class="sub-menu1">
+                    <ul>
+                        <li><a href=""> <b>Packaged Drinking Water</b></a></li>
+                        <li><a href=""> Drinking Water-2 Ltr</a></li>                        
+                    
+                        <li><a href=""> <b>Other Products</b></a></li>
+                        <li><a href=""> Arpita chatkadar bhel</a></li>
+                        <li><a href=""> Arpita Falhari Chivda</a></li>
+                        <li><a href=""> Drinking Water-250Ml</a></li>
+                        <li><a href=""> Arpita Lemon Bhel</a></li>
+                    </ul>
+                </div>
+            </li>
+                    <li><a href="">About Us</a>
+                    <div class="sub-menu2">
+                        <ul>
+                            <li><a href=""> Testimonial</a></li>
+                            <li><a href=""> Quality</a></li>
+                            <li><a href=""> Download Brochure</a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li><a href="">Contact US</a></li>
+                </ul>
+            </div>
+
+            <div id="email">
+                <button id="mailbtn"><i class="fa-regular fa-envelope"></i>
+                Send Mail</button>
+            </div>
+        </div>
+        <div id="carousel_container">
+            <div class="carousel" id="carousal" data-flickity='{"wrapAround": true, "groupCells": true, "autoPlay":1500}'>
+                <div class="carousel-cell">
+                    <img class="carousel-image" src="https://5.imimg.com/data5/WH/OR/MY-1025952/wheat-250x250.jpg" alt="image 1">
+                </div>
+                <div class="carousel-cell">
+                    <img class="carousel-image" src="https://5.imimg.com/data5/SELLER/Default/2021/9/DO/PD/CZ/80513067/organic-black-wheat-seeds-250x250.jpg" alt="image 2">
+                </div>
+                <div class="carousel-cell">
+                    <img class="carousel-image" src="https://5.imimg.com/data5/SELLER/Default/2021/9/AD/OE/AF/130751610/milling-wheat-250x250.jpeg" alt="image 3">
+                </div>
+                <div class="carousel-cell">
+                    <img class="carousel-image" src="https://5.imimg.com/data5/SELLER/Default/2021/9/ZF/AH/PG/2309390/roayal-organic-cashew-whole-250x250.jpg" alt="image 4">
+                </div>
+                <div class="carousel-cell">
+                    <img class="carousel-image" src="https://5.imimg.com/data5/SELLER/Default/2022/10/AJ/QW/TA/161102871/b-grade-lokwan-wheat-250x250.jpg" alt="image 5">
+                </div>
+                <div class="carousel-cell">
+                    <img class="carousel-image" src="https://5.imimg.com/data5/SELLER/Default/2022/9/AG/ZP/EP/156307736/2-250x250.jpg" alt="image 6">
+                </div>
+                <div class="carousel-cell">
+                    <img class="carousel-image" src="https://5.imimg.com/data5/QC/HW/ZO/SELLER-22880332/organic-lokwan-wheat-250x250.png" alt="image 7">
+                </div>
+              
+            </div>
+
+            <div id="about">
+                <h2>About Us</h2>
+                <p>Established in the year 2010, “Oxymore Aqua Packaged Drinking Water” is now considered the leading name in the field of packaged drinking water products. Under the</p>
+                    <p> leadership of our inspiring Director Mr. Pravin Deshmukh , the company has became foremost Manufacturer and Supplier of pure & safe drinking water. Our company is</p>
+                     <p>ISO 9001: 2008 certified for Quality Management Systems. The premium brand "Oxymore Aqua" was launched in the market in the year 2010. The launch was a</p>
+                     <span>
+                     <a href=""><i class="fa-sharp fa-solid fa-plus"></i>&nbsp;Read More</a></span>
+            </div>
+            <div id="icons_div">
+                <div id="icons_div1">
+                    <div>
+                    <span>
+                        <i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>&nbsp;
+                    <p>Nature of Business</p></span>
+                <p>Manufacturer</p>
+            </div>
+            <div>
+                <span>
+                    <i class="fa-solid fa-landmark-dome fa-2xl"></i>&nbsp;
+                    <p>Year of Establishment</p>
+                </span>
+                    <p>2008</p>
+               
+            </div>
+            <div>
+                <span>
+                    <i class="fa-solid fa-scale-balanced fa-2xl"></i>&nbsp;
+                    <p>Legal Status Of Firm</p>
+                    
+                </span>
+                <p>Limited Company(Ltd./Pvt.Ltd.)</p>
+            </div>
+            <div>
+                <span>
+                    <i class="fa-solid fa-chart-line fa-2xl"></i>&nbsp;
+                    <p>Annual Turnover</p>
+                    
+                </span>
+                <p>Rs. 25-50 Crore</p>
+            </div>
+                </div>
+                <div id="icons_div2">
+                    <div>
+                    <span>
+                        <i class="fa-solid fa-file-invoice fa-2xl"></i>&nbsp;
+                        <p>GST Number</p>
+                       
+                    </span>
+                    <p>27AASCS7760E1ZT</p>
+                </div>
+                </div>
+            </div>
+
+                   </div>
+
+                   <div id="product_services">
+                    <h2>Product & Services</h2>
+                    <div id="product-container">
+                        
+                    </div>
+                   </div>
+
+                   <div id="video">
+                    <h2>Our Videos</h2>
+                    <iframe data-img="https://img.youtube.com/vi/vdGn6m7m18s/hqdefault.jpg" loading="lazy" frameborder="0" allowfullscreen="1" allow="picture-in-picture" 
+                    title="Wheat Flour" width="850" height="400"
+src="https://www.youtube.com/embed/vdGn6m7m18s?enablejsapi=1&origin=https%3A%2F%2Fwww.indiamart.com&widgetid=1&autoplay=1&mute=1">
+</iframe>
+                   </div>
+
+                   <div id="deals">
+                    <h2>Deals in HSN Code</h2>
+                    <table>
+                       <thead class="code">
+                        <th>HSN Code</th>
+                        <th>HSN Description</th>
+                       </thead>
+                       <tr>
+                        <td class="code">20041000</td>
+                        <td>Other vegetables prepared or preserved otherwise than by vinegar or acetic acid, frozen, other than products of heading 2006 potatoes</td>
+                       </tr>
+                       <tr>
+                        <td class="code">20081910</td>
+                        <td>Fruit, nuts and other edible parts of plants, otherwise prepared or preserved, whether or not containing added sugar or other sweetening matter or spirit,
+                             not else where specified or included - nuts, ground - nuts and other seeds, whether or not mixed together : other, including mixtures : cashew nut, roasted, 
+                             salted or roasted and salted</td>
+                       </tr>
+
+                       <tr>
+                        <td class="code">7132000</td>
+                        <td>Dried leguminous vegetables,shelled,whether or not skinned or split chickpeas (garbanzos) beans (vigna spp., phaseolus spp.):</td>
+                       </tr>
+                       <tr>
+                        <td class="code">9041120</td>
+                        <td>Pepper of the genus piper; dried or crushed or ground fruits of the genus capsicum or of the genus pimenta pepper : neither crushed nor ground : light black pepper</td>
+                       </tr>
+                    </table>
+                   </div>
+    </div>
+    <div id="review"></div>
+
+    <div id="prefooter">
+        <div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+<script src="https://kit.fontawesome.com/2660e694b2.js" crossorigin="anonymous"></script>
+ 
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js" integrity="sha512-CX7sDOp7UTAq+i1FYIlf9Uo27x4os+kGeoT7rgwvY+4dmjqV0IuE/Bl5hVsjnQPQiTOhAX1O2r2j5bjsFBvv/A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+
+<script type="module">
+
+import mainNavbar from  "../components/mainNavbar.js"
+import getReviews from  "../components/reviews.js"
+import {fetchData} from "./utils/utils.js"
+document.getElementById('navbar').innerHTML = mainNavbar();
+document.getElementById('review').innerHTML = getReviews();
+   
+
+
+ async function fetch_products(){
+
+
+    let url = `https://mock-server-jwji.onrender.com/Users?brand=Sahyadri`
+
+    let response=await fetch(url)
+    let data =await response.json()
+    console.log(data);
+    displayProducts(data);
+}
+
+fetch_products();
+
+let count=0;
+ 
+ let displayProducts = (data) => {
+ 
+       let container = document.getElementById('product-container');
+       container.innerHTML = "";
+     data.map( (elem)=> {
+        count=count+1;
+         if(count<=5){
+            
+         
+         console.log(count);
+         
+          
+         let div = document.createElement('div');
+             div.setAttribute("class","product-div")
+         
+         let Image = document.createElement('img');
+             Image.src = elem.image;
+             Image.setAttribute("id","prod-image")
+ 
+         let Name = document.createElement('h3');
+             Name.textContent = elem.name;            
+             Name.style.cursor = "pointer"
+             Name.addEventListener('click',()=> {
+                 window.location.href ="product-details.html"
+             })
+             
+         let Price = document.createElement('p');
+             Price.textContent = elem.price;
+ 
+         let Seller = document.createElement('p');
+             Seller.textContent = elem.seller_name;
+ 
+         let City = document.createElement('p');
+             City.textContent = elem.city;
+             City.style.color = "rgb(141,119,119)"
+ 
+        
+ 
+         let btn = document.createElement('button');
+             btn.textContent = "Send Requirement"
+             btn.setAttribute( "id","prod-btn")
+             btn.addEventListener('click',()=> {
+                 window.location.href = "sendRequirement.html"
+             })
+         div.append(Image,Name,Price,Seller,City,btn);
+         container.append(div);
+         
+            }
+     })
+ }
+
+    
+</script>
