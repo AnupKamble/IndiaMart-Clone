@@ -1,0 +1,128 @@
+
+#products {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 13px;
+    width: 80%;
+}
+
+
+ .product-div {
+    height: 570px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    
+} 
+.product-div :hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: blue;
+}
+#prod-image {
+    height: 300px;
+    width: 200px;
+}
+
+#prod-image:hover {
+    /* height: 350px; */
+    width: 300px;
+}
+
+
+#prod-btn {
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    height: 34px;
+    background-color: rgb(4,130,120);
+    color:white;
+    font-size:medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#prod-btn:hover {
+    height: 40px;
+    width: 220px;
+    background-color: rgb(3, 63, 58);
+    text-decoration: none;
+}
+
+#product-page {
+    display: flex;
+}
+#product-list {
+    width: 20%;
+    margin-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    gap: 20px;
+    overflow:scroll;
+}
+#product-list > div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#product-list > div > div {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#product-page > #product-list > div li{
+    list-style: none;
+    line-height: 169%;
+    text-align: left;
+    margin: 10px;
+    text-decoration: none;
+    outline: none;
+    color: grey; 
+    cursor: pointer;  
+}
+
+#product-list > div > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: 550;
+    padding-bottom: 10px;
+}
+
+#product-list > div > div > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: 550;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#prod-city {
+    margin-top: 60px;
+    display: flex;
+    gap: 15px;
+    padding-left: 20px;
+    color: grey; 
+    cursor: pointer;
+    background-color:cornsilk;
+}
+#search-city {
+    margin-top: 10px;
+    height: 25px;
+    cursor: pointer;
+}
+#nearme-btn {
+    width: 100px;
+    height: 32px;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    margin-top: 10px;
+}
+ ::placeholder {
+    padding-left: 10px;
+}
+#searched-query {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-left: 20px;
+    line-height: 5px;
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank you for contacting </title>
+</head>
+
+<style>
+    #container {
+      margin-left: 25%;
+      height: 450px;
+      width: 750px;
+      margin-top: 100px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      display: flex;
+      border-radius: 15px;
+      flex-direction: column;
+      align-items: center;
+    }
+    button {
+    margin-top: 80px;
+    /* height: 55px; */
+    width: 200px;
+    border: none;
+    height: 45px;
+    font-weight: 650;
+    background-color: rgb(0,166,153);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    }
+    #container > p {
+      color: darkslategray;
+      font-weight: 600;
+    }
+    #logo-flex > img {
+      height: 30px;
+      margin-top: 18px;
+      /* margin-right: 10px; */
+    }
+    #logo-flex {
+    display: flex;
+    gap: 15px;
+    margin-top: 80px;
+    margin-left: 100px;
+    }
+
+
+</style>
+<body>
+
+
+  <div id="container">
+           
+    
+    <div id="logo-div">
+       <div id="logo-flex">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRApsw_zCCVaSgzUW3rfQbjPmyMEZUA6MqDn3LsOPfw-u8X7Zm4" alt="">
+          <h2 style="font-family: arial;">Thank You!</h2> 
+       </div>
+          
+          <p>Your requirement has been sent to <b>Sahyadri Hills Agro Pvt.Ltd</b></p> <hr>
+          
+    </div>
+    
+    <p>Become a verified free seller in 2 min &
+      Connect with 100+ Buyers from your city </p>
+      <div id="append-seller"></div>
+
+      <button id="become-seller">Start Selling For Free</button>
+
+  </div>
+  
+</body>
+</html>
+
+<script>
+
+
+    
+document.getElementById('become-seller').addEventListener('click',()=> {
+
+  window.location.href = "product.html";
+})
+  
+</script>
