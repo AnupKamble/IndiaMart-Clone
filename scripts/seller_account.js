@@ -1,6 +1,6 @@
-
-import mainNavbar from "../components/mainNavbar.js.js";
+import mainNavbar from "../components/mainNavbar.js";
 document.getElementById("navbar").innerHTML=mainNavbar();
+
 
 
 var box= document.getElementById("blackBox");
@@ -76,7 +76,15 @@ let displayAddress=()=>{
     let message= document.createElement("h4");
     message.innerHTML= "Yay! Your products got listed on the Indiamart."
     message.style.color="green";
-    box.append(name,number,company,email,products,pincode,city,state,address,message);
+
+    let button= document.createElement("button");
+    button.innerHTML= "Explore More";
+    button.setAttribute("id","submit4");
+    button.addEventListener("click",()=>{
+        postData();
+        window.location.href="index.html";
+    });
+    box.append(name,number,company,email,products,pincode,city,state,address,message,button);
 }
 
 
@@ -97,7 +105,7 @@ display();
 
 
         }
-        let response = await fetch(`https://api-project-masai.onrender.com`,{
+        let response = await fetch(`http://localhost:3000/Users`,{
             method: "POST",
             body: JSON.stringify(body),
             headers: {"Content-Type": "application/json"}
@@ -115,6 +123,8 @@ display();
         displayProducts();
        });
     document.getElementById("submit3").addEventListener("click",()=>{
-        postData();
+       
         displayAddress();
+       
     });
+   

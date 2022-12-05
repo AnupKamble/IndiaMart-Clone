@@ -6,6 +6,7 @@
         top: 0;
         background-color: rgb(46,49,146);
         width: 100%;
+        z-index: 5;
     }
     #i-logo {
         padding-left: 20px;

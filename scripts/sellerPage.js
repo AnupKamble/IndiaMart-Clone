@@ -2,8 +2,11 @@
 import mainNavbar from "../components/mainNavbar.js";
 document.getElementById("navbar").innerHTML=mainNavbar();
 
+import {footer} from "../components/footer.js";
+document.getElementById("footer").innerHTML= footer();
+
 // Creating registration components
-import structureBox from "../components/Registration.js";
+import {structureBox} from "../components/show.js";
 
 let generateOTP = (otpVerify) => {
   if (otpVerify.length > 0) {

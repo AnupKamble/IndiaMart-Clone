@@ -16,6 +16,7 @@ body{
     left: 100px;
     color: white;
     font-size: 13px;
+    text-align: center;
 }
 #row{
     position: absolute;
@@ -27,6 +28,7 @@ body{
     top: 80px;
     font-size: 16px;
     border-radius: 5px 5px 0 0;
+    text-align: center;
 }
 #accountBox{
     position: relative;
@@ -91,9 +93,10 @@ hr{
 }
 
 #submit4{
-    background-color: blue;
+    background-color: rgb(0,166,153);
     color: white;
     font-size: 22px;
+    border-radius: 10px;
 }
 
 
