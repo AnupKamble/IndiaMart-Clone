@@ -3,10 +3,10 @@
     return `<div id="navbar">
     <div id="logo-div">
          <div>
-            <a href=""><img id="i-logo" src="../logos/indiamart.png" alt="logo" style="height:40px;"></a> 
+            <a href="index.html"><img id="i-logo" src="../logos/indiamart.png" alt="logo" style="height:40px;"></a> 
          </div>
          <div>
-             <a href=""><h2 id="i-name">indiamart</h2></a>
+             <a href="index.html"><h2 id="i-name">indiamart</h2></a>
          </div>
          <div>
              <select name="All India" id="i-location">
@@ -30,8 +30,8 @@
                 <span>shopping</span>
            </div> -->
           <div>
-             <img src="https://img.icons8.com/ios-glyphs/30/ffffff/small-business--v1.png"/> <br>
-             <span>Sell</span>
+              <img src="https://img.icons8.com/ios-glyphs/30/ffffff/small-business--v1.png"/> <br>
+              <span> <a style="text-decoration: none; color:white" href ="sellerPage.html">Sell </a></span>
          </div>
 
          <div>
@@ -46,7 +46,7 @@
 
          <div>
              <img  src="https://img.icons8.com/windows/32/ffffff/user.png" /> <br>
-             <span>Sign in</span>
+             <span id="span_signIn">Sign in</span>
          </div>
        </div>
      </div>  

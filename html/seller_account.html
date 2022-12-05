@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/seller_account.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <script src="https://kit.fontawesome.com/8a185cdfdc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="navbar"></div>
+
+    <div id="page">
+      
+            <div id="row">Your Seller Profile</div>
+            <div id="blackBox">
+        </div>
+    <div id="accountBox">
+        <table>
+            <tr>
+                <td id="td1">Create Account <i style="color: green;" class="fa-solid fa-circle-check"></i></td>
+                <td id="td2">Add  Details</td>
+               
+            </tr>
+        </table>
+        <div id="details">
+        <p>Seller account successfully created.</p><hr>
+        <p>Start adding your <b>Business Details</b> </p>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+            <label for="company">Company/Business/Shop Name</label>
+            <input type="text" id="company" required placeholder="Eg: Vishnu Enterprises,Innovix Softawre Solutions,Suguna Food Pvt. Ltd.">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <input type="submit" value="Add Details" id="submit1">
+        
+    </div>
+    <div id="products" style="display: none;">
+        <p>Business Details added Successfully!</p><hr>
+         <h2>What would you like to sell?<h2>
+        <h3>Add product/services you want to sell.</h3>
+        <input type="url" id="image" placeholder="Add image url">
+        <input type="text" id="prod" placeholder="Product/service name">
+        <input type="submit" id="submit2" value="Continue">
+    </div>
+
+    <div id="addressBox" style="display: none;"> 
+        <p>Products / services added Successfully!</p><hr>
+        <p>What is the <b>Business Address</b>?<p>
+       <div>
+        <div>
+        <label for="pincode">PIN Code</label>
+        <input type="mobile" id="pincode" minlength="6" maxlength="6" required placeholder="Enter 6 digit code e.g. 111110"></div>
+        <div>
+        <label for="city">City</label>
+            <input type="text" id="city" required placeholder="City name"></div>
+            <div>
+            <label for="state">State</label>
+            <input type="text" id="state" required placeholder="State name"></div>
+    </div>
+    <label for="address">Address</label>
+    <input type="text" id="address" required placeholder="Floor/Building/Street">
+    <input type="text" id="locality" required placeholder="Locality e.g. Mahatma Nagar">
+    <input type="submit" id="submit3" value="Add Address">
+    <!-- <input type="submit" id="submit4" value="Explore More"> -->
+</div>
+</div>
+</div>
+</body>
+<script src="../scripts/seller_account.js" type="module"></script>
+</html>

@@ -1,15 +1,22 @@
 import mainNavbar from "../components/mainNavbar.js"
 import {fetchData} from "../utils/utils.js"
+
 document.getElementById('navbar').innerHTML = mainNavbar();
 
 let selectedID = JSON.parse(localStorage.getItem("ID")) || [];
 
 // console.log(selectedID);
+var store=JSON.parse(localStorage.getItem("mobile"))||undefined;
+console.log(store);
+
+if(store!=undefined){
+  document.querySelector("#span_signIn").innerHTML="Hi!" +" "+store;
+}
 
 
 let fetch = async () => {
     
-    let url = `https://api-project-masai.onrender.com/${selectedID}`
+    let url = `http://localhost:3000/Users/${selectedID}`
     let data = await fetchData(url);
     // console.log(data);
     displayImage(data);
@@ -101,6 +108,9 @@ let displaySeller = (data) => {
          Seller.style.fontFamily = "arial";
          Seller.style.textDecoration = "underline";
          Seller.style.cursor ="Pointer"
+         Seller.addEventListener('click',()=> {
+            window.location.href = "sellers.html"
+         })
  
     let  City = document.createElement('p');
          City.textContent = data.city + "," + data.state;
@@ -199,7 +209,7 @@ let fetchApi= async () => {
     let query = document.getElementById('i-searchbar').value;
 
     // let url = `http://localhost:3000/Users/?q=${query}`
-    let url = `https://api-project-masai.onrender.com/?q=${query}`
+    let url = `http://localhost:3000/Users/?q=${query}`
 
     let data = await fetchData(url);
     console.log((data));

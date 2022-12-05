@@ -1,20 +1,26 @@
 import mainNavbar from  "../components/mainNavbar.js"
-import getRewiews from  "../components/reviews.js"
+import {footer} from  "../components/footer.js"
 import {fetchData} from "../utils/utils.js"
 document.getElementById('navbar').innerHTML = mainNavbar();
-// document.getElementById('review').innerHTML = getRewiews();
+
+document.getElementById('footer').innerHTML = footer();
 
 document.getElementById('i-searchbtn').addEventListener('click',() => {
     fetch();
 })
+var store=JSON.parse(localStorage.getItem("mobile"))||undefined;
+console.log(store);
 
+if(store!=undefined){
+  document.querySelector("#span_signIn").innerHTML="Hi!" +" "+store;
+}
 
 let fetch = async () => {
      
     let query = document.getElementById('i-searchbar').value;
 
     // let url = `http://localhost:3000/Users/?q=${query}`
-    let url = `https://api-project-masai.onrender.com/Users/?q=${query}`
+    let url = `http://localhost:3000/Users/?q=${query}`
 
     let data = await fetchData(url);
     console.log((data));
@@ -49,6 +55,9 @@ let displayData = (data) => {
 
         let Seller = document.createElement('p');
             Seller.textContent = elem.seller_name;
+            Seller.addEventListener('click', ()=> {
+                window.location.href = "sellers.html"
+            })
 
         let City = document.createElement('p');
             City.textContent = elem.city;
@@ -101,7 +110,7 @@ document.getElementById('nearme-btn').addEventListener('click',()=> {
 
 let fetchCity = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users/?city=Pune`
+    let url = `http://localhost:3000/Users/?city=Pune`
 
     let data = await fetchData(url);
     console.log(data);
@@ -119,7 +128,7 @@ document.getElementById('pune').addEventListener('click',()=> {
 let fetchCityPune = async ()=> {
      
     let search = document.getElementById('i-searchbar').value;
-    let url = `https://api-project-masai.onrender.com/Users/?city=Pune`
+    let url = `http://localhost:3000/Users/?city=Pune`
 
     let data = await fetchData(url);
     console.log(data);
@@ -135,7 +144,7 @@ document.getElementById('indore').addEventListener('click',()=> {
 
 let fetchCityindore = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users/?q=indore`
+    let url = `http://localhost:3000/Users/?q=indore`
 
     let data = await fetchData(url);
     console.log(data);
@@ -152,7 +161,7 @@ document.getElementById('delhi').addEventListener('click',()=> {
 
 let fetchCitydelhi = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users/?q=delhi`
+    let url = `http://localhost:3000/Users/?q=delhi`
 
     let data = await fetchData(url);
     console.log(data);
@@ -169,7 +178,7 @@ document.getElementById('agra').addEventListener('click',()=> {
 
 let fetchCityagra = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users/?q=agra`
+    let url = `http://localhost:3000/Users/?q=agra`
 
     let data = await fetchData(url);
     console.log(data);
@@ -186,7 +195,7 @@ document.getElementById('rajkot').addEventListener('click',()=> {
 
 let fetchCityRajkot = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users/?q=rajkot`
+    let url = `http://localhost:3000/Users/?q=rajkot`
 
     let data = await fetchData(url);
     console.log(data);
@@ -203,7 +212,7 @@ document.getElementById('bathinda').addEventListener('click',()=> {
 
 let fetchCityBathinda = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users/?q=bathinda`
+    let url = `http://localhost:3000/Users/?q=bathinda`
 
     let data = await fetchData(url);
     console.log(data);
@@ -219,7 +228,7 @@ document.getElementById('madurai').addEventListener('click',()=> {
 
 let fetchCityMadurai = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users/?q=madurai`
+    let url = `http://localhost:3000/Users/?q=madurai`
 
     let data = await fetchData(url);
     console.log(data);
@@ -235,7 +244,7 @@ document.getElementById('banglore').addEventListener('click',()=> {
 
 let fetchCityBanglore = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users/?q=banglore`
+    let url = `http://localhost:3000/Users/?q=banglore`
 
     let data = await fetchData(url);
     console.log(data);
@@ -253,7 +262,7 @@ document.getElementById('chennai').addEventListener('click',()=> {
 
 let fetchCityChennai = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users/?q=chennai`
+    let url = `http://localhost:3000/Users/?q=chennai`
 
     let data = await fetchData(url);
     console.log(data);
@@ -270,7 +279,7 @@ document.getElementById('hyderabad').addEventListener('click',()=> {
 
 let fetchCityHyderabad = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users/?q=hyderabad`
+    let url = `http://localhost:3000/Users/?q=hyderabad`
 
     let data = await fetchData(url);
     console.log(data);
@@ -279,15 +288,128 @@ let fetchCityHyderabad = async ()=> {
 
 
 
-document.getElementById('body').onload('click',()=> {
+// windows.onload('click',()=> {
 
-    fetchDataRandom();
+//     fetchDataRandom();
+// })
+
+
+// let fetchDataRandom = async ()=> {
+
+//     let url = `http://localhost:3000/Users`
+
+//     let data = await fetchData(url);
+//     console.log(data);
+//     displayData(data);
+// }
+
+
+
+
+document.getElementById('manu').addEventListener('click',()=> {
+
+    ManuType();
 })
 
 
-let fetchDataRandom = async ()=> {
+let ManuType = async ()=> {
 
-    let url = `https://api-project-masai.onrender.com/Users`
+    let url = `http://localhost:3000/Users/?q=manufacturer`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('whole').addEventListener('click',()=> {
+
+    ManuType2();
+})
+
+
+let ManuType2 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=WholeSeller`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('export').addEventListener('click',()=> {
+
+    ManuType3();
+})
+
+
+let ManuType3 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=Exporter`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('retail').addEventListener('click',()=> {
+
+    ManuType4();
+})
+
+
+let ManuType4 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=retailer`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('one').addEventListener('click',()=> {
+
+    ManuType5();
+})
+
+
+let ManuType5 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=1 kg`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('two').addEventListener('click',()=> {
+
+    ManuType6();
+})
+
+
+let ManuType6 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=5 kg`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+document.getElementById('retail').addEventListener('click',()=> {
+
+    ManuType7();
+})
+
+
+let ManuType7 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=25kg`
 
     let data = await fetchData(url);
     console.log(data);
@@ -297,6 +419,85 @@ let fetchDataRandom = async ()=> {
 
 
 
+document.getElementById('organic').addEventListener('click',()=> {
+
+    ManuType8();
+})
+
+
+let ManuType8 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=organic`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('puff').addEventListener('click',()=> {
+
+    ManuType9();
+})
+
+
+let ManuType9 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=black`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('brown').addEventListener('click',()=> {
+
+    ManuType10();
+})
+
+
+let ManuType10 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=brown`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+
+document.getElementById('golden').addEventListener('click',()=> {
+
+    ManuType11();
+})
+
+
+let ManuType11 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=golden`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
+
+
+document.getElementById('ponni').addEventListener('click',()=> {
+
+    ManuType12();
+})
+
+
+let ManuType12 = async ()=> {
+
+    let url = `http://localhost:3000/Users/?q=ponni`
+
+    let data = await fetchData(url);
+    console.log(data);
+    displayData(data);
+}
 
 
 

@@ -1,0 +1,891 @@
+
+#back{
+    width: 100%;
+    height: 280px;
+    background-image: url(https://hm.imimg.com/imhome_gifs/bg-img.jpg);
+}
+
+#back h3{
+  color: #f9f9f9;
+  font-size: 22px;
+  text-align: center;
+  padding-top:40px;
+}
+#back #product{
+  width: 40%;
+  height: 42.5px;
+  margin:0 -14.2%;
+  padding-left: 20px;
+}
+#back button{
+  border:none;
+}
+  
+#btn{
+width: 15%;
+height:48px;
+background-color: teal;
+font-size: 20px;
+margin:auto;
+
+color:#f9f9f9;
+
+}
+#backin{
+display: flex;
+margin-top: -10px;
+}
+#btnlo{
+width: 15%;
+height:48px;
+margin:auto;
+border: none;
+font-size: 15px;
+
+}
+#btnlo #left_I{
+
+color:grey;
+border: none;
+
+}
+#india,#mumbai,#pune{
+  text-align: center;
+}
+#btnlo #right_I{
+margin-left: 10px;
+color:grey;
+}
+#city{
+width: 145px;
+height: 40px;
+margin-left: 16%;
+padding-left:2%;
+border: 4px double grey;
+background-color: #ffffff;
+display: none;
+}
+/* navbar2 */
+
+#navbar2{
+    display: flex;
+    justify-content: space-between;
+    border:none;
+    padding:0 20px;
+    width: 70%;
+    margin:auto;
+}
+#left2nd{
+  height: 55px;
+  width: 15%;
+ 
+  background-color: white;
+}
+#left3rd{
+  height: 55px;
+  width: 15%;
+ 
+  background-color: white;
+}
+#nav2all{
+ display: flex;
+}
+.hov{
+    display: flex;
+    height: 55px;
+}
+#build_class,#pharma_class,#indus_S_class,#ele_class,#indus_M_class,#food_class{
+  display: flex;
+  height: 55px;
+}
+.hov img{
+  width:40px;
+  height: 40px;
+  margin: 10px 10px 0 0;
+}
+
+#Industries_S,#food,#Industries_M,#pharma,#electrical,#Building{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin:auto;
+} 
+#build_show,#ind_S_show,#food_show,#ind_M_show,#pharma_show,#ele_show{
+  display: none;
+}
+#build_show a,#ind_S_show a,#food_show a,#ind_M_show a,#pharma_show a,#ele_show a{
+  color:black
+}
+
+#build_show p:hover,#ind_S_show p:hover,#food_show p:hover,#ind_M_show p:hover,#pharma_show p:hover,#ele_show p:hover{
+  text-decoration: underline;
+  color:blue;
+}
+
+#slide_upper{
+    color: #333;
+    line-height: 40px;
+    padding-top: 4px;
+    margin-left: 15%;
+}
+#slide_upper p{
+ font-size: 19px;
+ margin-top: -20px;
+}
+#slide_upper h2{
+  font-size: 29px;
+ }
+#slide_upper b {
+  font-size: 37px;
+  font-weight: 700;
+  
+}
+.slideimg{
+  display: block;
+  margin: auto;
+  height: 300px;
+  width: 70%;
+}
+#pura{
+  height: 105%;
+  width: 100%;
+  
+}
+#overlap{
+  position: relative;
+}
+#pura{
+  position:absolute;
+  top:-18px;
+  left: 10;
+  display: block;
+  margin:auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+
+/* building and construction box */
+
+.all{
+  margin:20px auto;
+  width: 80%;
+  box-shadow:0 -3px rgb(46,49,146);
+}
+.all h2{
+  padding-top:20px;
+  font-size: 28px;
+}
+#all_build{
+  margin:20px auto;
+  width: 80%;
+ 
+}
+#all_build h2{
+  padding-top:20px;
+  font-size: 28px;
+}
+.six{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width: 60%;
+  margin-left: 20px;
+
+}
+.sixgrid{
+  display: flex;
+  border:1px solid grey;
+  margin:10px;
+}
+.sixgrid:hover{
+  background-image: linear-gradient(rgba(236, 225, 225, 0.419), rgba(0, 0, 0, 0.458));
+}
+.sixgrid p,h3{
+  font-size: 14px;
+
+}
+.sixgrid img{
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: auto 10px;
+}
+.sixgrid img:hover{
+  height: 105px;
+  width: 105px;
+}
+.box{
+ display: flex;
+}
+
+
+
+/* background-image css   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+#ele_background,#build_background,#pharma_background,#food_background,#ind_M_background,#ind_S_background,
+#food_background,#cloth_background,#hospital_background,#pack_background{
+  width: 325px;
+  background-size: cover;
+  margin:0 0 10px 10px;
+}
+
+#build_background p,#ele_background p,#pharma_background p,#cloth_background p,
+#pack_background p,#ind_S_background p,#ind_M_background p,#hospital_background p,#food_background p{
+  font-size: 20px;
+  color:white;
+  
+}
+
+#build_background .test,#ele_background .test,#pharma_background .test,#food_background .test,#ind_M_background .test,
+#ind_S_background .test,#cloth_background .test,#hospital_background .test,#pack_background .test{
+  display: flex;
+  align-items: flex-end;
+}
+
+.test {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.311), rgba(0, 0, 0, 0.804));
+  height: 100%;
+  width: 100%;
+}
+
+
+/* background image url  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#ele_background{
+  background-image: url(https://hm.imimg.com/imhome_gifs/electronics-electrical-goods.jpg);
+}
+#build_background{
+  background-image: url(https://hm.imimg.com/imhome_gifs/building-construction.jpg);
+}
+
+#pharma_background{
+  background-image: url(https://hm.imimg.com/imhome_gifs/bigBn06.jpg);
+}
+
+#hospital_background{
+  background-image: url(https://hm.imimg.com/imhome_gifs/bigBn04.jpg);
+}
+
+#ind_M_background{
+  background-image: url(https://hm.imimg.com/imhome_gifs/industrial-plants-machinery.jpg);
+}
+   
+  #ind_S_background{
+    background-image: url(https://hm.imimg.com/imhome_gifs/industrial-engineering.jpg);
+  }
+
+  #food_background{
+    background-image: url(https://hm.imimg.com/imhome_gifs/vegetable-fruits.png);
+  }
+  
+  #cloth_background{
+    background-image: url(https://hm.imimg.com/imhome_gifs/apparel-clothing-garments.jpg);
+  }
+  
+  #pack_background{
+    background-image: url(https://hm.imimg.com/imhome_gifs/bigBn05.jpg);
+  }
+ /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+ /* footer */
+
+
+ #footer{
+  width: 100%;
+ }
+ #footer #upper div p{
+  font-size: 25px;
+  color: rgb(46,49,146);
+  margin-left: 15%;
+  margin-top: 0;
+ }
+ #footer #upper{
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.144);
+  height: 35px;
+  padding:5px;
+  display: flex;
+  justify-content: space-around;
+ }
+ #upper div{
+  
+  width: 400px;
+ }
+ #gomobile{
+  margin-left:30%;
+  text-align:left; 
+  display: flex;
+  height: 25px;
+  margin-top:1px
+}
+#gomobile i{
+  margin:3px;
+  font-size: 25px;
+  border-radius: 25px ;
+}
+ #footer #middle{
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+ }
+ #face i{
+  color:blue;
+ }
+ #link i{
+  color:#007AB9
+ }
+ #twit i{
+  color:#55ACEE;
+ }
+ #footer #middle a{
+ text-decoration: none;
+ color:grey;
+ }
+ #footer #middle a:hover{
+  color: rgb(46,49,146);
+ }
+ #middle p{
+  font-size: 18px ;
+  margin:-10px 0 6px 0;
+ }
+ #middle #supplies p{
+  margin-bottom: 16px;
+ }
+ #footer #lower span{
+     color:grey;
+     font-size: 15px;
+ }
+ #lower{
+  display: flex;
+  justify-content:space-around;
+ }
+
+ /* sign in */
+#signIn{
+  width:18%;
+  height: 500px;
+  background-color: rgba(246, 238, 238, 0.377);
+}
+ #signIn button{
+  padding:10px 35px 10px 35px;
+  background-color:#00A699;
+  color:white;
+  border: none;
+  display: flex;
+  margin:10px auto;
+ }
+ #signIn p,a{
+  font-size: 14px;
+  margin:auto 0;
+  margin-left: 10px;
+ }
+ #signIn p:hover{
+  color:blue;
+  text-decoration: underline;
+ }
+ #signIn h3{
+  
+  margin-left:20px;
+ }
+ #signIn h3:hover{
+  color:blue;
+  text-decoration: underline;
+ }
+ 
+ 
+ #signIn #join{
+  display: flex;
+ }
+ .sign_middle_class{
+  margin-bottom: 20px;
+ }
+ #static{
+  position: relative;
+  padding-top:27px
+}
+#signIn{
+  position:fixed;
+  top:50px;
+  right:0;
+  z-index: 5;
+  margin-top:190px;
+  display: block;
+  margin:auto;
+  background-color: white;
+  display: none;
+}
+.test div{
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+
+/* number */
+
+
+#number{
+ 
+  width: 35%;
+  height: 300px;
+ 
+}
+
+#cCode{
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid gray;
+  margin-top: 30px;
+}
+
+#body{
+  position:relative;
+}
+#loginModalSection{
+  position:fixed;
+  background-color:white;
+  height: 240px;
+  width: 30%;
+  text-align: center;
+  top:25%;
+  left: 35%;
+  display: none;
+}
+#page{
+  position: absolute;
+  z-index: 1;
+}
+#loginToOTPBtn,#otpModalButton{
+  background-color: teal;
+  color: white;
+  border-color:transparent;
+  height: 50px;
+  width: 85%;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+#back{
+  position: relative;
+}
+#otpModalSection{
+  position: fixed;
+  top:5%;
+  left: 35%;
+ 
+  display: block;
+  margin: auto;
+  right: 150%;
+  bottom: 20px;
+  width: 30%;
+  height: 300px;
+  z-index: 2;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: none;
+}
+#otpModalSection input{
+  margin-left: 50px;
+}
+#otpModalSection button{
+  margin-left: 27px;
+  
+}
+#input{
+  display:inline-flex; 
+  justify-content: center;
+}
+#otpInput, #mobileInput{
+  height: 46px;
+  border: 1px solid gray;
+  width: 262px;
+  margin-top: 30px;
+}
+.modal-title{
+  background-color:#2E3192;
+  margin-top:-20px;
+  padding:20px;
+  color:white
+}
+#user{
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+#user p{
+  color:green;
+  margin:20px;
+  margin-right: 0;
+  font-weight:700;
+}
+
+#user_show{
+   margin:21px;
+   margin-left: 10px;
+   font-size: 13px;
+}
+#signIn_hide{
+ display:none;
+}
+
+
+/* new navbar ------------------------------------------------------------------------------------------------------------------------- */
+
+
+#new_navbar {
+  position: fixed;
+  display: flex;
+  background-color: rgb(46,49,146);
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  z-index: 5;
+  margin-top:-10px;
+}
+
+#new_kuch_bhi h2{
+  margin: 0px auto;
+  color: aliceblue;
+  text-decoration:none;
+}
+
+#new_kuch_bhi{
+  width: 10%;
+  height: 100%;
+  /* margin: 0 -15%; */
+  margin-left: -45px;
+} 
+
+#new_icons {
+  display: flex; 
+  line-height: 14px;
+  height:40px; 
+  justify-content: space-around; 
+  width: 15%;
+  height: 40px;
+  margin:15px 10% 0 0;
+  
+} 
+#new_icons div span{
+  color:aliceblue;
+  font-size: 12px;
+  cursor: pointer;
+} 
+
+#new_icons > div > img {
+  width:  21px;
+  cursor: pointer;
+} 
+#new_i-logo{
+ 
+  margin-top:10px;
+ margin-left: 100px;;
+}
+#i-bestprice{
+  margin:auto;
+}
+#product_var{
+  width: 300px;
+  height: 30px;
+  margin-top:4px;
+  padding-left:20px;
+}
+ 
+#btn_var{
+  width: 15%;
+  height:35px;
+  background-color: teal;
+  font-size: 10px;
+  margin:auto;
+  color:#f9f9f9;
+  border: none;
+  margin-top:4px
+  }
+  #btnlo_var{
+    border: none;
+    height:35px;
+    width: 18%;
+    margin-top: 4.5px;
+  }
+  #backin_var{
+  display: flex;
+  margin-top: 10px;
+  }
+  
+/* ...................................................................................................................................... */
+
+
+
+@media all and (max-width: 900px) and (min-width:280px) {
+  /* Small Screen Styles  */
+  #backin{
+    width: 100%;
+  }
+  #backin_var{
+    display: none;
+  }
+     #new_kuch_bhi{
+      width: 10%;
+      height: 100%;
+      margin-top: 4px;
+   
+    } 
+    #product_var{
+      width: 300px;
+      height: 30px;
+      margin-top:4px;
+      padding-left:20px;
+    }
+     
+    #btn_var{
+      width: 15%;
+      height:35px;
+      background-color: teal;
+      font-size: 10px;
+      margin:auto;
+      color:#f9f9f9;
+      border: none;
+      margin-top:4px
+      }
+      #btnlo_var{
+        border: none;
+        height:35px;
+        width: 18%;
+        margin-top: 4.5px;
+      }
+     
+    
+  #backin #product{
+    width: 40%;
+  }
+  #new_i-logo{
+    margin:10px -400px 0 0;
+  }
+  #new_icons{
+    margin-left: 70px;
+    margin: 15px 15% 0 0;
+  }
+  #back{
+  width: 100%;
+  }
+  #btn{
+    width: 20%;
+  }
+  #btnlo{
+    width: 20%;
+    font-size: 8px;
+  }
+ .six{
+  width: 100%;
+  margin-left:0;
+ }
+ .sixgrid{
+   margin:2px;
+ }
+ 
+ .sixgrid p,h3{
+   font-size: 10px;
+ }
+ .box{
+  display: block;
+ }
+ .sixgrid img{
+   width: 50px;
+   height: 50px;
+ }
+ .sixgrid img:hover{
+   height: 55px;
+   width: 55px;
+ }
+ 
+ #hospital_background,#food_background,#build_background,#cloth_background,#pack_background,#ind_M_background,#ele_background,#ind_S_background,#pharma_background{
+  width: 100%;
+  margin:0;
+}
+#build_background p,#ele_background p,#pharma_background p,#cloth_background p,
+#pack_background p,#ind_S_background p,#ind_M_background p,#hospital_background p,#food_background p{
+  font-size: 10px;
+  color:white;
+  
+}
+ #navbar2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+ }
+
+
+#build_img,#pharma_class img,#indus_S_class img,#ele_class img,#indus_M_class img,#food_class img{
+ 
+  height: 25px;
+}
+#build_class p,#pharma_class p,#indus_S_class p,#ele_class p,#indus_M_class p,#food_class p{
+ 
+ font-size: 8px;
+ 
+}
+.buil_div p,.pharma_div p,.ind_S_div p,.electrical_div p,.ind_div p,.food_div p{
+ 
+  font-size: 10px;
+ }
+ .buil_div h3,.pharma_div h3,.ind_S_div h3,.electrical_div h3,.ind_div h3,.food_div h3{
+ 
+  font-size: 10px;
+ }
+#build_class,#pharma_class,#indus_S_class,#elec_class,#indus_M_class,#food_class{
+  height: 32px;
+  background-color: none;
+}
+
+#loginToOTPBtn, #otpModalButton {
+  width:45%;
+  border-radius: 5px;
+}
+#loginModalSection {
+  width: 90%;
+  left: 5%;
+}
+#otpInput, #mobileInput {
+  width: 80%;
+}
+#otpModalSection {
+  left: 5%;
+  width: 90%;
+}
+#otpModalSection button {
+  display: block;
+  margin: auto;
+}
+#otpModalSection input {
+  margin: 0 90px 10px 90px;
+}
+.slideimg{
+  display: block;
+  margin: auto;
+  height: 200px;
+  width: 100%;
+}
+#slide_upper {
+  padding-top: 0;
+  margin-left: 0;
+}
+
+#slide_upper h2{
+  font-size: 20px;
+
+  margin-top: -10px;
+}
+#slide_upper p{
+  font-size: 20px;
+ line-height: 1.5;
+}
+#slide_upper b {
+  font-size: 25px;
+}
+#pura{
+  top:0;
+}
+
+
+/* footer//////////////////////////////////////////////////////////////////////////////// */
+
+
+#footer{
+  width: 100%;
+  display: none;
+ }
+ #footer #upper div p{
+ display: none;
+ }
+ #footer #upper{
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.144);
+  height: 35px;
+  padding:5px;
+  display: flex;
+  justify-content: space-around;
+ }
+ #upper div{
+  
+  width: 400px;
+ }
+ #gomobile{
+  margin-left:2px;
+  text-align:left; 
+  display: flex;
+  height: 25px;
+  margin-top:1px
+}
+#gomobile i{
+  margin:3px;
+  font-size: 25px;
+  border-radius: 25px ;
+}
+ #footer #middle{
+  display: flex;
+  justify-content: space-between;
+  display: none;
+ }
+ #footer{
+  display: none;
+ }
+ #face i{
+  color:blue;
+ }
+ #link i{
+  color:#007AB9
+ }
+ #twit i{
+  color:#55ACEE;
+ }
+ #footer #middle a{
+ text-decoration: none;
+ color:grey;
+ }
+ #footer #middle a:hover{
+  color: rgb(46,49,146);
+ }
+ #middle p{
+  font-size: 18px ;
+  margin:-10px 0 6px 0;
+ }
+ #middle #supplies p{
+  margin-bottom: 16px;
+ }
+ #footer #lower span{
+     color:grey;
+     font-size: 15px;
+ }
+ #lower{
+  display: flex;
+  justify-content:space-around;
+ }
+ 
+
+/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/
+ 
+
+#new_kuch_bhi h2{
+ font-size: 10px;
+  margin: auto;
+  color: aliceblue;
+  text-decoration:none;
+}
+#new_kuch_bhi{
+  margin-right: 0;
+}
+#i-logo{
+  margin-left: 0;
+  margin-top:10px
+}
+#new_icons{
+  gap:5px
+}
+
+#signIn{
+  width:48%;
+  height: 550px;
+}
+ 
+ /* /////////////////////////////////////////////////////////////// */
+   
+}
+@media all and (max-width: 1100px) and (min-width:672px) {
+ /* Medium Screen Styles  */
+}
