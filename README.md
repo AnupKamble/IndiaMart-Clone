@@ -8,7 +8,7 @@
 * REST API 
 * LOCAL STORAGE
 
-### This is our Unit 5 second construct week project which are created by Team of 4 members.   
+### This is our Unit 5 construct week project which is created by Team of 4 members.   
 
 
 ## Team Members and Contributors:
