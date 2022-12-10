@@ -7,6 +7,7 @@
 * JAVA-SCRIPT 
 * REST API 
 * LOCAL STORAGE
+### Netlify Deploy Link : https://astonishing-smakager-1c8cc9.netlify.app/
 
 ### This is our Unit 5 construct week project which is created by Team of 4 members.   
 
