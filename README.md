@@ -35,6 +35,8 @@
 
 
 ### Description
+#### Netlify Deployed Link :https://astonishing-smakager-1c8cc9.netlify.app/
+
 
   - ### Homepage 
 ![HomePage](https://github.com/AnupKamble/IndiaMart-Clone/blob/DEV_Anup/HomePage.png)
