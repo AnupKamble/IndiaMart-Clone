@@ -7,9 +7,8 @@
 * JAVA-SCRIPT 
 * REST API 
 * LOCAL STORAGE
-### Netlify Deploy Link : https://astonishing-smakager-1c8cc9.netlify.app/
 
-### This is our Unit 5 construct week project which is created by Team of 4 members.   
+### This is our Unit 5 second construct week project which are created by Team of 4 members.   
 
 
 ## Team Members and Contributors:
@@ -35,4 +34,44 @@
 
 
 
+### Description
 
+  - ### Homepage 
+![HomePage](https://github.com/AnupKamble/IndiaMart-Clone/blob/DEV_Anup/HomePage.png)
+
+
+
+ - ### Product-Page 
+![HomePage](https://github.com/AnupKamble/IndiaMart-Clone/blob/DEV_Anup/Product-Page.png)
+
+
+
+
+ - ### Product-Details 
+![HomePage](https://github.com/AnupKamble/IndiaMart-Clone/blob/DEV_Anup/Product-details.png)
+
+
+
+ - ### Homepage Seller-Page
+![HomePage](https://github.com/AnupKamble/IndiaMart-Clone/blob/DEV_Anup/Seller-page.png)
+
+
+
+
+ - ### Homepage Seller-Info
+![HomePage](https://github.com/AnupKamble/IndiaMart-Clone/blob/DEV_Anup/Seller-info.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    ## Thank You For Watching!
